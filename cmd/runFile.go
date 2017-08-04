@@ -15,7 +15,7 @@
 package cmd
 
 import (
-	"github.com/dpaolella/shp2csvApp/shp2csvApp"
+	"github.com/dpaolella/shp2csv/shp2csv"
 	"github.com/spf13/cobra"
 )
 
@@ -26,7 +26,7 @@ var runFileCmd = &cobra.Command{
 	Long: `runFile exports data from a shapefile to a
 	a csv of the same name`,
 	Run: func(cmd *cobra.Command, args []string) {
-		shp2csvApp.Run(false, args[0])
+		shp2csv.Run(false, args[0])
 	},
 }
 

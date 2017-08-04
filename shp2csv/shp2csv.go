@@ -2,7 +2,7 @@
 This program saves data stored in a shapefile to CSV (one row per polygon)
 */
 
-package shp2csvApp
+package shp2csv
 
 import (
 	"bytes"

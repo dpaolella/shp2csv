@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/dpaolella/shp2csvApp/cmd"
+import "github.com/dpaolella/shp2csv/cmd"
 
 func main() {
 	cmd.Execute()

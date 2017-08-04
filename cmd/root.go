@@ -25,7 +25,7 @@ import (
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:   "shp2csvApp",
+	Use:   "shp2csv",
 	Short: "A shapefile data exporter",
 	Long: `shp2csv is a tool that saves data stored shapefiles to comma-separated
 	value files (one row per polygon)`,
@@ -48,7 +48,7 @@ func Execute() {
 // 	// Cobra supports Persistent Flags, which, if defined here,
 // 	// will be global for your application.
 //
-// 	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.shp2csvApp.yaml)")
+// 	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.shp2csv.yaml)")
 // 	// Cobra also supports local flags, which will only run
 // 	// when this action is called directly.
 // 	RootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
@@ -60,7 +60,7 @@ func Execute() {
 // 		viper.SetConfigFile(cfgFile)
 // 	}
 //
-// 	viper.SetConfigName(".shp2csvApp") // name of config file (without extension)
+// 	viper.SetConfigName(".shp2csv") // name of config file (without extension)
 // 	viper.AddConfigPath("$HOME")       // adding home directory as first search path
 // 	viper.AutomaticEnv()               // read in environment variables that match
 //
