@@ -75,8 +75,8 @@ func Run(dirFlag bool, path string) {
 		}
 
 		for i, rec := range records {
-			for _, v := range rec.fields {
-				csvData[i+1] = append(csvData[i+1], strconv.FormatFloat(v, 'f', -1, 64))
+			for _, f := range fieldNames {
+				csvData[i+1] = append(csvData[i+1], strconv.FormatFloat(rec.fields[f], 'f', -1, 64))
 			}
 		}
 
